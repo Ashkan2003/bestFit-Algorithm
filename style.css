@@ -14,17 +14,14 @@ body {
 }
 
 .login-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  /* width: 600px; */
-  min-width: 400px;
+  position: relative;
+  /* -width: 500px; */
   padding: 40px;
   padding-bottom: 40px;
-  transform: translate(-50%, -50%);
+  margin: auto;
   background: rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  /* box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6); */
   border-radius: 10px;
 }
 
@@ -70,7 +67,11 @@ body {
 }
 
 .login-box form a {
-  position: relative;
+  width: 190px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: inline-block;
   padding: 10px 20px;
   color: #03e9f4;
@@ -79,7 +80,6 @@ body {
   text-transform: uppercase;
   overflow: hidden;
   transition: 0.5s;
-  margin-top: 40px;
   letter-spacing: 4px;
 }
 
@@ -174,23 +174,6 @@ body {
     bottom: 100%;
   }
 }
-/* --------explanation---------- */
-.explanation {
-  margin: auto;
-  /* width: 600px; */
-  min-width: 300px;
-
-  padding: 10px;
-  padding-left: 40px;
-  margin-top: 450px;
-  background: rgba(0, 0, 0, 0.5);
-  box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-}
-.explanation p {
-  color: rgb(9, 159, 24);
-  font-weight:bolder;
-}
 
 /* --------tables style---------- */
 
@@ -198,13 +181,12 @@ body {
   text-align: left;
   overflow: hidden;
   overflow-x: scroll;
-  width: 100%;
-  /* margin: auto; */
-  margin-top: 90px;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
   display: table;
   padding: 0 0 8em 0;
 }
-
 
 h1 {
   font-size: 3em;
@@ -305,4 +287,22 @@ h2 a {
   .container th:nth-child(4) {
     display: none;
   }
+}
+/* --------explanation---------- */
+.explanation {
+  margin: auto;
+  /* width: 600px; */
+  max-width: 500px;
+  min-width: 300px;
+
+  padding: 10px;
+  padding-left: 40px;
+  /* margin-top: 450px; */
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+}
+.explanation p {
+  color: rgb(9, 159, 24);
+  font-weight: bolder;
 }
