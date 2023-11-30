@@ -75,7 +75,6 @@ function bestFit(blockSize, m, processSize, n) {
         <td>${allocation[i] !== -1 ? allocation[i] + 1 : "Not Allocated"}</td>
         </tr>
        `)
-        console.log(`${i + 1}         ${processSize[i]}         ${allocation[i] !== -1 ? allocation[i] + 1 : "Not Allocated"}`);
     }
 }
 
