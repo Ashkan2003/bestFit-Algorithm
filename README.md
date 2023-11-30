@@ -1,7 +1,7 @@
 # bestFit-Algorithm
 # see here : https://ashkan2003.github.io/bestFit-Algorithm/
 ## Best fit allocates the process to a partition which is the smallest sufficient partition among the free available partitions. <br/>
-### The time complexity of Best-Fit algorithm is O(n2) as it requires two loops to process the memory blocks and processes. The outer loop is used to iterate through the processes and the inner loop is used to iterate through the blocks.
+### The time complexity of Best-Fit algorithm is O(n2) as it requires two loops to process the memory blocks and processes. The outer loop is used to iterate through the processes and the inner loop is used to iterate through the blocks..
 The space complexity of Best-Fit algorithm is O(n) as it requires an array of size n to store the block allocation for each process.
 Is Best-Fit really best? 
 Although, best fit minimizes the wastage space, it consumes a lot of processor time for searching the block which is close to required size. Also, Best-fit may perform poorer than other algorithms in some cases. For example, see below exercise.
