@@ -181,7 +181,7 @@ body {
   text-align: left;
   overflow: hidden;
   overflow-x: scroll;
-  width: 80%;
+  width: 100%;
   margin: auto;
   margin-top: 50px;
   display: table;
@@ -282,12 +282,12 @@ h2 a {
   transition-timing-function: line;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .container td:nth-child(4),
   .container th:nth-child(4) {
     display: none;
   }
-}
+} */
 /* --------explanation---------- */
 .explanation {
   margin: auto;
