@@ -37,7 +37,7 @@ runBtn.addEventListener('click', function (event) {
 function bestFit(blockArray, blockArrayLength, processArray, processArrayLength) {
     // Stores block id of the block allocated to a process 
     let allocation = new Array(processArrayLength).fill(-1); // create a array of length of processArrayLength and fill its items with "-1" like [-1, -1, -1, -1]
-    
+
     // Pick each process and find suitable blocks according to its size and assign to it 
     for (let i = 0; i < processArrayLength; i++) {
         // Find the best fit block for current process 
@@ -60,10 +60,10 @@ function bestFit(blockArray, blockArrayLength, processArray, processArrayLength)
             blockArray[bestIdx] -= processArray[i];
         }
     }
-    console.log(allocation,"aaa")
-    console.log("Process No. Process Size  Block no. blockLeftOver");
+    console.log(allocation, "aaa")
+    console.log("Process No.     Process Size      Block no.       blockLeftOver");
     for (let i = 0; i < processArrayLength; i++) {
-        console.log(`${i + 1}         ${processArray[i]}         ${allocation[i] !== -1 ? allocation[i] + 1 : "Not Allocated"}         ${blockArray[allocation[i]]}`);
+        console.log(`${i + 1}               ${processArray[i]}                  ${allocation[i] !== -1 ? allocation[i] + 1 : "Not Allocated"}                ${blockArray[allocation[i]]}`);
     }
     // --------------
     for (let i = 0; i < processArrayLength; i++) {
